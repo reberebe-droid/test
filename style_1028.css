@@ -1,0 +1,29 @@
+
+.red, .orange, .yellow, .lime, .pink, .blue {
+    height: 100%;
+    width: calc(100% / 6);
+    float: left; 
+}
+
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }
+.lime { background-color: lime; }
+.pink { background-color: pink; }
+.blue { background-color: blue; }
+
+
+@media screen and (max-width: 900px) {
+    .red, .orange, .yellow, .lime, .pink, .blue {
+        height: calc(100% / 6);
+        width: 100%;
+        float: none; 
+    }
+    
+    .red { background-color: black; }
+    .orange { background-color: gray; }
+    .yellow { background-color: lightgray; }
+    .lime { background-color: red; }
+    .pink { background-color: yellow; }
+    .blue { background-color: violet; }
+}
